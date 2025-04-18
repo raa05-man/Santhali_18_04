@@ -1,6 +1,12 @@
 import React, {useState, useRef} from "react";
 import InputBox from "./InputBox";
 
+//TODO:
+
+// 1. Add the logic for the translate button
+// 2. Add the icons for switch and reset buttons
+// 3. Add the styling on the Santhali and English text to make the box of same size irrespectiv of the text
+
 function Translator() {
 
   const [defaultValue, setDefaultValue] = useState(true);
@@ -72,6 +78,8 @@ function Translator() {
       >
         Translate
       </button>
+
+      <p className="p-5">An initiative by Jharkhand government in collaboration with Web Team, NIT Jamshedpur</p>
     </div>
   );
 }
