@@ -40,6 +40,8 @@ const Footer = () => {
         </div>
 
         {/* Social Icons */}
+
+        {/* //todo: Enter links here */}
         <div className="flex flex-col items-center space-y-2 md:space-y-0 md:flex-row md:space-x-5 text-xl">
           <a href="#" className="hover:text-gray-700 transition"><FaInstagram /></a>
           <a href="#" className="hover:text-gray-700 transition"><FaFacebookF /></a>
