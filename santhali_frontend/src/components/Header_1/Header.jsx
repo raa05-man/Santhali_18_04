@@ -2,9 +2,11 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="w-full px-4 py-4 flex flex-col items-center gap-4 bg-[#cbd8cc]">
-      <i className="fa-solid fa-bars text-2xl text-[#043624] self-start md:self-center"></i>
-
+    <div className="w-full px-4 py-4 flex flex-col items-center gap-4 bg-[rgba(146,178,159,0.54)]">
+      {/* <i className="fa-solid fa-bars text-2xl text-[#043624] self-start md:self-center"></i> */}
+      <span class="material-symbols-outlined">
+density_medium
+</span>
       <h1 className="text-[#043624] text-2xl sm:text-3xl md:text-4xl font-semibold text-center font-[Hanken_Grotesk]">
         Santhali Translator
       </h1>

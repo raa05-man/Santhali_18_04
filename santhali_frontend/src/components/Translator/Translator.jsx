@@ -28,7 +28,7 @@ function Translator() {
   };
 
   return (
-    <div className="min-h-screen bg-[#cbd8cc] flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-[rgba(146,178,159,0.54)] flex flex-col items-center justify-center px-4 py-8">
       <div className="flex items-center justify-center gap-8 mb-6">
         <span className="bg-[#b2a78d] px-6 py-2 rounded-full text-sm text-black">
           {defaultValue ? "Santhali" : "English"}
