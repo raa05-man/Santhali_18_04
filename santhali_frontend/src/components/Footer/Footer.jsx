@@ -24,11 +24,13 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Logo & Text */}
         <div className="flex flex-col items-center md:items-start">
+          <a href="https://nitjsr.ac.in" target='_blank'>
           <img
             src="/nit_logo.png" // Place in public/
             alt="NIT Jamshedpur Logo"
             className="w-16 md:w-20 mb-2"
           />
+          </a>
           <div className="text-center md:text-left">
             <h2 className="text-base md:text-lg font-semibold">
               National Institute of Technology, Jamshedpur
