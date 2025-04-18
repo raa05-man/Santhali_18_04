@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import InputBox from "./InputBox";
 
 function Translator() {
-  //if default value, then Santhali will occur first, else English will occur first
-  const [defaultValue, setDefaultValue] = React.useState(true);
 
-  const firstInputRef = React.useRef(null);
-  const secondInputRef = React.useRef(null);
+  const [defaultValue, setDefaultValue] = useState(true);
+
+  const firstInputRef = useRef(null);
+  const secondInputRef = useRef(null);
 
   const handleSwitch = () => {
     setDefaultValue((prev) => !prev);
@@ -17,51 +17,63 @@ function Translator() {
     secondInputRef.current.value = "";
   };
 
-  //   TODO
   const handleTranslate = () => {
     //! Enter the code that handles the translate button logic
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-4 bg-white shadow-lg rounded-xl border border-gray-200">
-      {/* //TODO: insert icon */}
-      <div className="flex justify-between items-center">
-        <button
-          onClick={handleSwitch}
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-        >
-          icon_for_switch
-        </button>
-        <p className="text-lg font-medium text-gray-800">
+    <div className="min-h-screen bg-[#cbd8cc] flex flex-col items-center justify-center px-4 py-8">
+      <div className="flex items-center justify-center gap-8 mb-6">
+        <span className="bg-[#b2a78d] px-6 py-2 rounded-full text-sm text-black">
           {defaultValue ? "Santhali" : "English"}
-        </p>
-      </div>
+        </span>
 
-      <InputBox isReadonly={false} inputRef={firstInputRef} placeholder="Enter text here..." />
+{/*//todo: Here goees the icon for switch */}
+        <button onClick={handleSwitch} className="text-xl">
+          ↔️
+        </button>
 
-      <p className="text-lg font-medium text-gray-800">
+        <span className="bg-[#b2a78d] px-6 py-2 rounded-full text-sm text-black">
           {!defaultValue ? "Santhali" : "English"}
-        </p>
-
-      <InputBox isReadonly={true} inputRef={secondInputRef} placeholder="Translated text here..." />
-  
-
-      <div className="flex justify-end gap-4">
-   
-        <button
-          onClick={resetTextArea}
-          className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
-        >
-   icon_for_reset
-        </button>
-        <button
-          onClick={handleTranslate}
-          className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
-        >
-          Translate
-        </button>
+        </span>
       </div>
+
+      <div className="flex gap-6 w-full max-w-4xl">
+        <div className="relative w-1/2">
+          <InputBox
+            isReadonly={false}
+            inputRef={firstInputRef}
+            placeholder="Write text here..."
+            light
+          />
+
+          {/* //todo: here goes the icon for reset */}
+          <button
+            onClick={resetTextArea}
+            className="absolute bottom-3 left-3 text-gray-500 hover:text-black transition"
+          >
+            🔄
+          </button>
+        </div>
+
+        <div className="w-1/2">
+          <InputBox
+            isReadonly={true}
+            inputRef={secondInputRef}
+            placeholder="Translated"
+            translated
+          />
+        </div>
+      </div>
+
+      <button
+        onClick={handleTranslate}
+        className="mt-6 bg-[#91a5d8] text-black px-6 py-2 rounded-lg hover:bg-[#7a92d0] transition"
+      >
+        Translate
+      </button>
     </div>
   );
 }
+
 export default Translator;

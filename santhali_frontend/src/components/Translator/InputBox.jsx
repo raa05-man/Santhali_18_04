@@ -1,33 +1,27 @@
 import React from "react";
 
-function InputBox({ children, isReadonly, inputRef, placeholder }) {
+function InputBox({ isReadonly, inputRef, placeholder, translated, light }) {
   return (
     <textarea
       readOnly={isReadonly}
       ref={inputRef}
-      className="
+      className={`
         w-full
-        min-h-[150px]
+        min-h-[200px]
         p-4
         rounded-xl
         text-base
-        bg-white
-        text-gray-800
-        placeholder-gray-400
-        border
-        border-gray-300
-        focus:outline-none
-        focus:ring-2
-        focus:ring-blue-500
         resize-none
-        shadow-sm
+        focus:outline-none
         transition
         duration-200
-      "
+        shadow-md
+        placeholder-gray-500
+        ${translated ? "bg-[#b2a78d] text-gray-800" : ""}
+        ${light ? "bg-white text-gray-900" : ""}
+      `}
       placeholder={placeholder}
-    >
-
-    </textarea>
+    />
   );
 }
 
