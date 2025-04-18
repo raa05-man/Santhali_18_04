@@ -1,0 +1,17 @@
+h1{
+    font-family: Hanken Grotesk;
+    color: rgb(4, 54, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: auto;
+    /* height: 100px; */
+}

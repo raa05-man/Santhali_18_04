@@ -1,13 +1,16 @@
 import { useState } from 'react'
+import Header from '../header'
 import Translator from './components/Translator/Translator'
 
-import './App.css'
 
 function App() {
 
   return (
     <>
-    <Translator />
+
+      <Header/>
+        <Translator />
+
     </>
   )
 }
