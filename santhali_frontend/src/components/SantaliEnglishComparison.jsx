@@ -9,7 +9,7 @@ export default function SantaliEnglishComparison() {
       
       <div className="w-full max-w-5xl flex flex-col md:flex-row gap-4 md:gap-8 justify-center">
         {/* Santali Card */}
-        <div className="bg-[#48454566] p-4 rounded-lg text-black rounded-lg shadow-md p-6 w-full md:w-1/2 border-2 border-blue-200">
+        <div className="bg-[#48454566] p-6 rounded-lg text-black shadow-md w-full md:w-1/2 border-t-4 border-t-[#9D6C46]/80">
           <h2 className="text-xl md:text-2xl font-bold mb-4">Santali</h2>
           
           <div className="space-y-4">
@@ -36,9 +36,9 @@ export default function SantaliEnglishComparison() {
         </div>
         
         {/* English Card */}
-        <div className="bg-[#48454566] p-4 rounded-lg text-black rounded-lg shadow-md p-6 w-full md:w-1/2 border-2 border-blue-200">
+        <div className="bg-[#48454566] p-6 rounded-lg text-black shadow-md w-full md:w-1/2 border-t-4 border-t-[#9D6C46]/80">
           <h2 className="text-xl md:text-2xl font-bold mb-4">English</h2>
-          
+
           <div className="space-y-4">
             <div className="flex items-start">
               <span className="text-gray-700 mr-3">★</span>
