@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function SantaliEnglishComparison() {
   return (
-    <div className="bg-[rgba(146,178,159,0.54)] min-h-screen w-full p-4 md:p-8 flex flex-col items-center">
+    <div className="bg-[rgba(146,178,159,0.54)] min-h-screen w-full p-4 md:p-8 flex flex-col items-center ">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center">
         Explore Santali to English Language Pair Information
       </h1>
       
-      <div className="w-full max-w-5xl flex flex-col md:flex-row gap-4 md:gap-8 justify-center">
-        {/* Santali Card */}
+      <div className="w-full max-w-5xl flex flex-col md:flex-row gap-4 md:gap-16 justify-center">
+
         <div className="bg-[#48454566] p-6 rounded-lg text-black shadow-md w-full md:w-1/2 border-t-4 border-t-[#9D6C46]/80">
           <h2 className="text-xl md:text-2xl font-bold mb-4">Santali</h2>
           
@@ -35,7 +35,6 @@ export default function SantaliEnglishComparison() {
           </div>
         </div>
         
-        {/* English Card */}
         <div className="bg-[#48454566] p-6 rounded-lg text-black shadow-md w-full md:w-1/2 border-t-4 border-t-[#9D6C46]/80">
           <h2 className="text-xl md:text-2xl font-bold mb-4">English</h2>
 

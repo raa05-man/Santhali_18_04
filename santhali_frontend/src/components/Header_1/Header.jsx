@@ -6,21 +6,19 @@ export default function Header() {
       <span className="material-symbols-outlined absolute top-2 right-2 text-xl cursor-pointer">
     density_medium
   </span>
-      <h1 className="text-[#000000]/40% text-2xl sm:text-3xl md:text-4xl font-semibold text-center font-[Hanken_Grotesk] absolute top-20">
-        Santali Translator
-      </h1>
 
-      <div className="flex justify-center items-center gap-8 mt-4 flex-wrap absolute top-30">
-        <img
-          src="src/assets/jharkhand_logo.png"
-          alt="Jharkhand Logo"
-          className="h-16 w-auto"
+<h1 className="text-[#000000]/70 text-4xl sm:text-5xl md:text-6xl font-semibold text-center font-[Hanken_Grotesk] absolute top-15 drop-shadow-[2px_4px_6px_rgba(0,0,0,0.6)]">
+  Santali Translator
+</h1>
 
-        />
+
+      
+
+      <div className="flex justify-center items-center gap-8 mt-4 flex-wrap absolute top-25 ">
         <img
-          src="src/assets/nit_logo.png"
+          src="src/assets/logos.SVG"
           alt="NIT Logo"
-          className="h-16 w-auto"
+          className="h-40 w-auto "
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ import React from 'react';
 export default function SantaliPage() {
   return (
     <div className="bg-[rgba(146,178,159,0.54)] p-4 md:p-8 font-sans min-h-screen w-full box-border overflow-hidden">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 md:mb-16 text-center text-black">
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 md:mb-16 text-center text-black drop-shadow-[2px_4px_6px_rgba(0,0,0,0.4)]">
         Santali (संताली / ᱥᱟᱱᱛᱟᱞᱤ)
       </h1>
 
